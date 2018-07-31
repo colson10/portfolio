@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import Header from '../header/header';
+// import Header from '../header/header';
 import Landing from '../landing/landing';
 
 // import Favicon from 'react-favicon';
@@ -16,9 +16,11 @@ export default class App extends React.Component {
           <Helmet>
             <meta name='viewport' content='width=device-width, initial-scale=1.0' />
             <meta property="og:title" content="Carl Olson Portfolio" />
-            <meta property="og:type" content="website" />*/}
+            <meta property="og:type" content="website" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />*/}
+            
           </Helmet>
-          <Header />
+          {/* <Header /> */}
           <Route path='*' component={Landing}/>
           {/* <Footer/> */}
         </div>
