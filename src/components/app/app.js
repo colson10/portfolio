@@ -17,7 +17,8 @@ export default class App extends React.Component {
             <meta name='viewport' content='width=device-width, initial-scale=1.0' />
             <meta property="og:title" content="Carl Olson Portfolio" />
             <meta property="og:type" content="website" />
-            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />*/}
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />*/}
             
           </Helmet>
           {/* <Header /> */}
