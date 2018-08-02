@@ -7,6 +7,18 @@ html {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: $off-white;
+}
+
+a:hover {
+  color: $light-blue;
+}
+
 // body {
 //   @include background-size(cover);
 
