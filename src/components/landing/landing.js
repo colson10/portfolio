@@ -2,7 +2,8 @@ import React from 'react';
 // import ScrollableAnchor from 'react-scrollable-anchor';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import groupUpPic from '../../assets/groupup-favicon.png';
-import sossmsPic from '../../assets/sos-sms.png'
+import triviaWizardPic from '../../assets/wizard-clipart.gif';
+import pokemonPic from '../../assets/pokemon3.png';
 
 import './landing.scss';
 
@@ -27,6 +28,7 @@ class Landing extends React.Component {
             </section>
             <section id='about'>
               <h2>About Me</h2>
+              <p className='divider'>______</p>
               <div id='about-block'>
                 <div id='img-div'>
                   <img src='https://avatars1.githubusercontent.com/u/33847838?s=460&v=4'/>
@@ -39,28 +41,46 @@ class Landing extends React.Component {
             </section>
             <section id='projects'>
               <h2>Projects</h2>
+              <p className='divider'>______</p>
               <div className='groupup'>
                 <h4>GroupUp</h4>
-                <p>Click on picture to learn more...</p>
+                <p>Click image to learn more...</p>
                 <img className='groupup-pic' src={groupUpPic} />
                 <p><a href='http://groupup.site' target='_blank'>Visit GroupUp</a></p>
+                <p>_______________________</p>
               </div>
               <div className='sossms'>
                 <h4>SOS-SMS</h4>
-                <p>Click on picture to learn more...</p>
+                <p>Click image to learn more...</p>
                 <img className='sossms-pic' src='https://howardzuo.gallerycdn.vsassets.io/extensions/howardzuo/vscode-npm-dependency/1.2.0/1519619746611/Microsoft.VisualStudio.Services.Icons.Default' />
                 <p><a href='https://www.npmjs.com/package/sos-sms' target='_blank'>SOS-SMS published on npm</a></p>
+                <p>_______________________</p>
+              </div>
+              <div className='trivia-wizard'>
+                <h4>Trivia Wizard</h4>
+                <p>Click image to learn more...</p>
+                <img className='trivia-pic' src={triviaWizardPic} />
+                <p><a href='https://trivia-game.github.io/trivia-wizard' target='_blank'>Visit Trivia Wizard</a></p>
+                <p>_______________________</p>
+              </div>
+              <div className='pokemon'>
+                <h4>Pokemon Fight Club</h4>
+                <p>Click image to learn more...</p>
+                <img className='pokemon-pic' src={pokemonPic} />
+                <p><a href='http://pokemonfight.club' target='_blank'>Visit PokemonFightClub</a></p>
+                <p>_______________________</p>
               </div>
             </section>
             <section id='contact'>
               <h2>Contact</h2>
+              <p className='divider'>______</p>
               <h4>Email me at colson10@gmail.com</h4>
               <p>Github</p>
               <p>LinkedIn</p>
             </section>
         </div>
         <footer className='footer'>
-        <AnchorLink href='#intro'><p>Home</p></AnchorLink>
+        <AnchorLink href='#intro'><p>Back to top</p></AnchorLink>
         </footer>
       </div>
     );

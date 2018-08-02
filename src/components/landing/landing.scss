@@ -10,8 +10,12 @@
 }
 
 .footer {
-  height: 150px;
+  height: 50px;
   background-color: black;
+  background: $dark-slate;
+  text-align: center;
+  padding-top: 15px;
+  color: $off-white;
     p {
       margin-top: 0;
     }
@@ -19,17 +23,24 @@
 
 nav {
   font-family: 'Lato', sans-serif;
-  text-align: right;
-  padding-right: 10%;
+  text-align: center;
+
 
   a {
     display: inline-block;
     text-decoration: none;
-    margin: 0 15px;
+    // margin: 0 15px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   p {
     color: $off-white;
+
+  }
+
+  p:hover {
+    color: $light-blue;
   }
 
 }
@@ -58,10 +69,11 @@ section {
 }
 
 #intro {
+  background-color: $dark-slate;
   background-image: url('../../assets/mt-rainier1.jpg');
   background-repeat: no-repeat;
   background-size: 100%;  
-  min-height: 200px;
+  min-height: 190px;
   text-align: center;
   padding-top: 5%;
   h2 {
@@ -99,6 +111,10 @@ section {
     text-align: left;
   }
 
+  .divider {
+    text-align: center;
+  }
+
   #about-block {
     vertical-align: middle;
     display: inline-block;
@@ -117,16 +133,34 @@ section {
 
 #projects {
   background: $light-blue;
+  color: $off-white;
+
+  a:hover {
+    color: $dark-blue;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
 
   div {
     display: inline-block;
-    min-width: 25%;
-    margin-left: 50px;
-    margin-right: 50px;
+    min-width: 20%;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .pokemon-pic {
+    border-radius: 10%;
+  }
+
+  .trivia-pic {
+    border-radius: 10%;
   }
   
 }
 
 #contact {
-  background: orange;
+  background:$dark-blue;
+  color: $off-white;
 }
