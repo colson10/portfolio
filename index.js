@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const app = express();
 
-app.use(express.static(`${__dirname}/../build`));
+app.use(express.static(`${__dirname}/build`));
 
 app.listen(process.env.PORT, () => {
   console.log(__dirname, 'this is the dirname');
@@ -13,5 +13,5 @@ app.listen(process.env.PORT, () => {
 });
 
 app.get('*', (request, response) => {
-  response.sendFile(`${__dirname}/../build/index.html`);
+  response.sendFile(`${__dirname}/build/index.html`);
 });
