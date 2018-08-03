@@ -1,19 +1,19 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-import * as routes from '../../routes';
+import './header.scss';
 
 class Header extends React.Component {
   render() {
     return (
       <header className='header'>
-        <nav>
-          <Link to={routes.LANDING}><p>Home</p></Link>
-          <Link to={routes.LANDING}><p>About</p></Link>
-          <Link to={routes.LANDING}><p>Contact</p></Link>
-        </nav>
-      </header>
+      <nav>
+        <AnchorLink href='#intro'><p>Home</p></AnchorLink>
+        <AnchorLink href='#about'><p>About</p></AnchorLink>
+        <AnchorLink href='#portfolio'><p>Portfolio</p></AnchorLink>
+        <AnchorLink href='#contact'><p>Contact</p></AnchorLink>
+      </nav>
+    </header>
     );
   }
 }
