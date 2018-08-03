@@ -1,9 +1,9 @@
 import React from 'react';
-// import ScrollableAnchor from 'react-scrollable-anchor';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import groupUpPic from '../../assets/groupup-favicon.png';
 import triviaWizardPic from '../../assets/wizard-clipart.gif';
 import pokemonPic from '../../assets/pokemon3.png';
+import Header from '../header/header';
 
 import './landing.scss';
 
@@ -12,14 +12,7 @@ class Landing extends React.Component {
   render() {
     return (
       <div className='landing-page'>
-        <header className='header'>
-          <nav>
-            <AnchorLink href='#intro'><p>Home</p></AnchorLink>
-            <AnchorLink href='#about'><p>About</p></AnchorLink>
-            <AnchorLink href='#projects'><p>Projects</p></AnchorLink>
-            <AnchorLink href='#contact'><p>Contact</p></AnchorLink>
-          </nav>
-        </header>
+        <Header />
         <div className='main-section'>
             <section id='intro'>
               <h2>Carl Olson</h2>
@@ -39,35 +32,31 @@ class Landing extends React.Component {
                 <p>I am motivated by how my work can impact my community and the world. I made the move into software development full time because I feel that is where I can have the greatest positive impact.</p>
               </div>
             </section>
-            <section id='projects'>
-              <h2>Projects</h2>
+            <section id='portfolio'>
+              <h2>Portfolio</h2>
               <p className='divider'>______</p>
-              <div className='groupup'>
+              <div className='groupup card'>
                 <h4>GroupUp</h4>
-                <p>Click image to learn more...</p>
                 <img className='groupup-pic' src={groupUpPic} />
-                <p><a href='http://groupup.site' target='_blank'>Visit GroupUp</a></p>
+                <p>React | Redux | MongoDB</p>
                 <p>_______________________</p>
               </div>
-              <div className='sossms'>
+              <div className='sossms card'>
                 <h4>SOS-SMS</h4>
-                <p>Click image to learn more...</p>
                 <img className='sossms-pic' src='https://howardzuo.gallerycdn.vsassets.io/extensions/howardzuo/vscode-npm-dependency/1.2.0/1519619746611/Microsoft.VisualStudio.Services.Icons.Default' />
-                <p><a href='https://www.npmjs.com/package/sos-sms' target='_blank'>SOS-SMS published on npm</a></p>
+                <p>Published package on NPM</p>
                 <p>_______________________</p>
               </div>
-              <div className='trivia-wizard'>
+              <div className='trivia-wizard card'>
                 <h4>Trivia Wizard</h4>
-                <p>Click image to learn more...</p>
                 <img className='trivia-pic' src={triviaWizardPic} />
-                <p><a href='https://trivia-game.github.io/trivia-wizard' target='_blank'>Visit Trivia Wizard</a></p>
+                <p>Vanilla JavaScript</p>
                 <p>_______________________</p>
               </div>
-              <div className='pokemon'>
+              <div className='pokemon card'>
                 <h4>Pokemon Fight Club</h4>
-                <p>Click image to learn more...</p>
                 <img className='pokemon-pic' src={pokemonPic} />
-                <p><a href='http://pokemonfight.club' target='_blank'>Visit PokemonFightClub</a></p>
+                <p>jQuery | SQL | Express</p>
                 <p>_______________________</p>
               </div>
             </section>
