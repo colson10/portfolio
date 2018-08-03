@@ -5,6 +5,6 @@ import { render } from 'react-dom';
 import App from './components/app/app';
 
 
-const div = document.createElement('div');
-document.body.appendChild(div);
-render(<App/>, div);
+const app = document.createElement('div');
+document.body.appendChild(app);
+render(<App/>, app);
