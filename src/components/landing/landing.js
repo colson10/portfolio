@@ -10,7 +10,6 @@ import LinkedInImageSVG from '../../assets/linked.svg';
 import './landing.scss';
 
 class Landing extends React.Component {
-
   render() {
     return (
       <div className='landing-page'>
@@ -29,9 +28,8 @@ class Landing extends React.Component {
               <h4>Contact me at</h4>
               <h3><a href="mailto:colson10@gmail.com">colson10@gmail.com</a></h3>
               <div className='contact-links'>
-              <a href='https://github.com/colson10' target='_blank'><img src={gitHubImage} /></a>
-                <a href='https://www.linkedin.com/in/carl-olson/' target='_blank'><LinkedInImageSVG /></a>
-                
+              <a href='https://github.com/colson10' target='_blank' rel='noopener noreferrer'><img src={gitHubImage} /></a>
+                <a href='https://www.linkedin.com/in/carl-olson/' target='_blank' rel='noopener noreferrer'><LinkedInImageSVG /></a>
               </div>   
             </section>
         </div>
