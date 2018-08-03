@@ -66,4 +66,35 @@ section {
   background:$dark-blue;
   color: $off-white;
   min-height: 350px;
+
+  a {
+    color: $light-blue; 
+  }
+
+  .contact-links {
+    display: inline-block;
+  }
+
+  svg {
+    height: 15%;
+    width: 15%;
+  }
+
+  img {
+    height: 115px;
+  }
+
+  svg:hover {
+    opacity: .75;
+  }
+
+  img:hover {
+    opacity: .75;
+  }
+
+  .contact-links * {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
 }

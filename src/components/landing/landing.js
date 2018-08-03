@@ -4,6 +4,9 @@ import Header from '../header/header';
 import AboutMe from '../about/about';
 import Portfolio from '../portfolio/portfolio';
 
+import gitHubImage from '../../assets/github-cat.png';
+import LinkedInImageSVG from '../../assets/linked.svg';
+
 import './landing.scss';
 
 class Landing extends React.Component {
@@ -23,9 +26,13 @@ class Landing extends React.Component {
             <section id='contact'>
               <h2>Contact</h2>
               <p className='divider'>______</p>
-              <h4>Email me at colson10@gmail.com</h4>
-              <p>Github</p>
-              <p>LinkedIn</p>
+              <h4>Contact me at</h4>
+              <h3><a href="mailto:colson10@gmail.com">colson10@gmail.com</a></h3>
+              <div className='contact-links'>
+              <a href='https://github.com/colson10' target='_blank'><img src={gitHubImage} /></a>
+                <a href='https://www.linkedin.com/in/carl-olson/' target='_blank'><LinkedInImageSVG /></a>
+                
+              </div>   
             </section>
         </div>
         <footer className='footer'>
