@@ -1,4 +1,6 @@
-const HTMLWebpackPlugin = require('html-webpack-plugin');
+'use strict';
+
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const webpackConfig = module.exports = {};
 
@@ -10,21 +12,37 @@ webpackConfig.output = {
 };
 
 webpackConfig.plugins = [
-  new HTMLWebpackPlugin({
+  new HtmlWebpackPlugin({
     title: 'Carl Olson | Portfolio',
   }),
 ];
 
 webpackConfig.module = {};
+
 webpackConfig.module.rules = [
   {
-    test: /\.(png|svg|jpg|gif)$/,
+    test: /\.(png|jpg|gif|pdf)$/,
     use: [
       'file-loader',
     ],
   },
   {
-    test: /\.js$/,
+    test: /\.svg$/,
+    use: [
+      {
+        loader: 'babel-loader',
+      },
+      {
+        loader: 'react-svg-loader',
+        options: {
+          jsx: true,
+        },
+      },
+    ],
+  },
+  {
+    test: /\.(js|jsx)$/,
+    exclude: /node_modules/,
     use: {
       loader: 'babel-loader',
       options: {
