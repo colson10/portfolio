@@ -1,7 +1,7 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-import * as routes from '../../routes';
+import './header.scss';
 
 class Header extends React.Component {
   render() {

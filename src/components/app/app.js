@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-// import Header from '../header/header';
 import Landing from '../landing/landing';
 
 // import Favicon from 'react-favicon';

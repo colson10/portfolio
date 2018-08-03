@@ -1,0 +1,38 @@
+@import '../../style/vars';
+
+#about {
+  background: rgba(52, 92, 132, .9);
+  color: $off-white;
+  min-height: 350px;
+  
+  p {
+    padding: 0 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: none;
+    text-align: left;
+  }
+
+  .divider {
+    text-align: center;
+  }
+
+  #about-block {
+    vertical-align: middle;
+
+
+    img {
+      border-radius: 25%;
+    }
+
+    @media (min-width: 420px) {
+      display: inline-block;
+      #img-div {
+        float: left;
+        clear: both;
+        max-width: 30%;
+        padding: 30px 30px 30px 30px;
+      }
+    }
+    
+  }
+}
