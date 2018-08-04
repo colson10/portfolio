@@ -38,7 +38,7 @@ class Portfolio extends React.Component {
             handleClose={() => this.setState({ groupUp: false })}>
             <h2>GroupUp</h2>
             <img src={GUpic1} />
-            <p>GroupUp is a virtual meeting place that allows users to create and collaborate with events. Users can make announcements, lists, text posts, or upload images to the event group. GroupUp utilizes basic authentication for login and bearer authorization for access control, as well as google oauth login.</p>
+            <p className='description'>GroupUp is a virtual meeting place that allows users to create and collaborate with events. Users can make announcements, lists, text posts, or upload images to the event group. GroupUp utilizes basic authentication for login and bearer authorization for access control, as well as google oauth login.</p>
             <h5>JavaScript | Node | React | Redux | Express | MongoDB | Mongoose | AWS S3 | webpack | Travis CI | Jest</h5>
             <h4>Visit it live at <a href='http://groupup.site'>groupup.site</a>, and checkout the <a href='https://github.com/Group-Up'>github</a></h4>
           </Modal>
@@ -53,7 +53,9 @@ class Portfolio extends React.Component {
             handleClose={() => this.setState({ sossms: false })}>
             <h2>SOS-SMS</h2>
             <img src={sosPic1} />
-            <p>This is a full backend </p>
+            <p className='description'>SOS-SMS is a published npm package designed to make it easy for freelance developers managing many projects to receive text messages when errors occur in deployed applications. It was built in conjunction with a server and database to provide data persistence. The server and database are open source and easy to setup with Heroku deployment, after which using the npm package gives the developer the easy integration of writing a simple line of code to receive a customizable text for a specific error.</p>
+            <h5>NPM | Twilio API | JavaScript | Node | Express | MongoDB | Mongoose | Travis CI | Jest</h5>
+            <h4>View the npm package here: <a href='https://www.npmjs.com/package/sos-sms'>SOS-SMS</a>, and checkout the backend portion of the project here:<a href='https://github.com/401-Team-Awesome/sos-sms-server'>github</a></h4>
           </Modal>
           <div className='trivia-wizard card' onClick={() => this.setState({ triviaWizard: true })}>
             <h4>Trivia Wizard</h4>
