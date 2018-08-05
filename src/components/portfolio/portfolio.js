@@ -81,7 +81,7 @@ class Portfolio extends React.Component {
             <p className='description'>Trivia Wizard increases in difficulty as you advance with getting questions correct. Built with vanilla JavaScript as an early project in my Code Fellows immersive program, I am proud of the intuitive UI achieved with simple HTML/CSS design.</p>
             </div>
             <div className='project-links'>
-            <h4><a href='https://trivia-game.github.io/trivia-wizard' target='_blank'>https://trivia-game.github.io/trivia-wizard</a></h4>
+            <h4><a href='https://trivia-game.github.io/trivia-wizard' target='_blank'>trivia-game.github.io/trivia-wizard</a></h4>
             <h4><a href='https://github.com/trivia-game/trivia-wizard' target='_blank'>GitHub</a></h4>
             </div>
           </Modal>
