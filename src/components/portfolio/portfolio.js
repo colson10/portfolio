@@ -6,7 +6,6 @@ import Modal from '../modal/modal';
 import GUpic1 from '../../assets/groupup-pic4.png';
 import triviaWizardPic1 from '../../assets/trivia-wizard-pic.png';
 import sosPic1 from '../../assets/npm.jpg';
-import sosPic2 from '../../assets/twilio.png';
 
 import './portfolio.scss';
 
@@ -43,8 +42,8 @@ class Portfolio extends React.Component {
             <h5>JavaScript | Node | React | Redux | Express | MongoDB | Mongoose | AWS S3 | webpack | Travis CI | Jest</h5>
             </div>
             <div className='project-links'>
-            <h4><a href='http://groupup.site'>groupup.site</a></h4>
-            <h4><a href='https://github.com/Group-Up'>GitHub</a></h4>
+            <h4><a href='http://groupup.site' target='_blank'>groupup.site</a></h4>
+            <h4><a href='https://github.com/Group-Up' target='_blank'>GitHub</a></h4>
             </div>
           </Modal>
           <div className='sossms card' onClick={() => this.setState({ sossms: true })}>
@@ -63,8 +62,8 @@ class Portfolio extends React.Component {
             <h5>NPM | Twilio API | JavaScript | Node | Express | MongoDB | Mongoose | Travis CI | Jest</h5>
             </div>
             <div className='project-links'>
-            <h4><a href='https://www.npmjs.com/package/sos-sms'>npmjs.com/package/sos-sms</a></h4>
-            <h4><a href='https://github.com/401-Team-Awesome/sos-sms-server'>GitHub</a></h4>
+            <h4><a href='https://www.npmjs.com/package/sos-sms' target='_blank'>npmjs.com/package/sos-sms</a></h4>
+            <h4><a href='https://github.com/401-Team-Awesome/sos-sms-server' target='_blank'>GitHub</a></h4>
             </div>
           </Modal>
           <div className='trivia-wizard card' onClick={() => this.setState({ triviaWizard: true })}>
@@ -82,8 +81,8 @@ class Portfolio extends React.Component {
             <p className='description'>Trivia Wizard increases in difficulty as you advance with getting questions correct. Built with vanilla JavaScript as an early project in my Code Fellows immersive program, I am proud of the intuitive UI achieved with simple HTML/CSS design.</p>
             </div>
             <div className='project-links'>
-            <h4><a href='https://trivia-game.github.io/trivia-wizard'>https://trivia-game.github.io/trivia-wizard</a></h4>
-            <h4><a href='https://github.com/trivia-game/trivia-wizard'>GitHub</a></h4>
+            <h4><a href='https://trivia-game.github.io/trivia-wizard' target='_blank'>https://trivia-game.github.io/trivia-wizard</a></h4>
+            <h4><a href='https://github.com/trivia-game/trivia-wizard' target='_blank'>GitHub</a></h4>
             </div>
           </Modal>
           <div className='pokemon card' onClick={() => this.setState({ pokemonFightClub: true })}>
@@ -102,8 +101,8 @@ class Portfolio extends React.Component {
             <h5>JavaScript | Node | Express | SQL | HandleBars | Page.js</h5>
             </div>
             <div className='project-links'>
-            <h4><a href='http://pokemonfight.club'>pokemonfight.club</a></h4>
-            <h4><a href='https://github.com/301projectCastr/301projectcastr.github.io'>GitHub</a></h4>
+            <h4><a href='http://pokemonfight.club' target='_blank'>pokemonfight.club</a></h4>
+            <h4><a href='https://github.com/301projectCastr/301projectcastr.github.io' target='_blank'>GitHub</a></h4>
             </div>
           </Modal>
         </section>

@@ -28,22 +28,31 @@ section {
   min-height: 190px;
   text-align: center;
   padding-top: 5%;
-  h2 {
-    margin: auto, auto;
-    font-size: 2em;
-  }
 
   h3 {
-    font-size: 1.5em;
+    line-height: .75 !important;
   }
 
   h4 {
-    font-size: 1.25em;
-    line-height: 25%;
+    line-height: .75 !important;
   }
 
   @media (min-width: 660px) {
     height: 300px;
+
+    h2 {
+      margin: auto, auto;
+      font-size: 2em;
+    }
+  
+    h3 {
+      font-size: 1.5em;
+    }
+  
+    h4 {
+      font-size: 1.25em;
+      line-height: 25%;
+    }
   }
 
   @media (min-width: 900px) {
